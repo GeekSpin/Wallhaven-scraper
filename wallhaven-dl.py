@@ -101,6 +101,14 @@ def downloadPage(pageId, totalImage):
             print("%s already exist - %s / %s" % (filename, currentImage , totalImage))
 
 def main():
+    
+    if APIKEY == "EnterYourAPIKeyHere":
+        print('')
+        print('!Warning!')
+        print('You need to replace the default API Key on line 25 of the python code with your own API Key from your wallhaven account')
+        print('')
+        quit()
+    
     Choice = input('''Choose how you want to download the image:
 
     Enter "category" for downloading wallpapers from specified categories
